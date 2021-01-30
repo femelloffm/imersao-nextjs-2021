@@ -4,25 +4,63 @@
     "description": "Teste os seus conhecimentos sobre Star Wars e vamos ver se você consegue derrotar o Império Galáctico!",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer um seletor por id via CSS?",
+        "image": "https://lumiere-a.akamaihd.net/v1/images/death-star-super-laser-main-image_408bebb4.jpeg?region=317%2C0%2C1164%2C656&width=960",
+        "title": "Qual foi o primeiro planeta a ser destruído pela Estrela da Morte?",
         "description": "Essa é pra aquecer",
-        "answer": 2,
+        "answer": 1,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+          "Coruscant",
+          "Alderaan",
+          "Corelia",
+          "Scarif"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
+        "image": "https://lumiere-a.akamaihd.net/v1/images/databank_ackbar_01_169_55137220.jpeg?region=0%2C49%2C1560%2C780",
+        "title": "Qual a espécie do Almirante Ackbar?",
+        "description": "Faz tempo em haha",
+        "answer": 3,
+        "alternatives": [
+           "Gungan",
+           "Bothan",
+           "Toydariano",
+           "Mon Calamari"
+        ]
+      },
+      {
+        "image": "https://media.comicbook.com/2020/04/star-wars-clone-wars-movie-ahsoka-tano-1214557.jpeg?auto=webp&width=1200&height=672&crop=1200:672,smart",
+        "title": "Qual mestre Jedi descobriu Ahsoka Tano e a levou ao Templo Jedi?",
         "description": "Faz tempo em haha",
         "answer": 0,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+           "Plo Koon",
+           "Anakin Skywalker",
+           "Kit Fisto",
+           "Luminara Unduli"
+        ]
+      },
+      {
+        "image": "https://img.cinemablend.com/filter:scale/quill/4/3/f/4/7/a/43f47a2a21c3bbab91d9d9750b9b3b13fd8be605.jpg?mw=600",
+        "title": "Quem matou Jabba the Hutt?",
+        "description": "Faz tempo em haha",
+        "answer": 2,
+        "alternatives": [
+           "Boba Fett",
+           "Han Solo",
+           "Leia Organa",
+           "Luke Skywalker"
+        ]
+      },
+      {
+        "image": "https://i.pinimg.com/originals/70/15/3b/70153b175c82f88ed949b33891c5a69f.jpg",
+        "title": "Qual é o desfecho dessa cena no Episódio III: A Vingança dos Sith",
+        "description": "Faz tempo em haha",
+        "answer": 1,
+        "alternatives": [
+           "Obi-Wan impede que Anakin faça algo com Conde Dooku",
+           "Anakin decapita o Conde Dooku",
+           "Anakin guarda os sabres de luz e nocauteia Conde Dooku",
+           "Palpatine mata Conde Dooku no lugar de Anakin"
         ]
       }
     ],

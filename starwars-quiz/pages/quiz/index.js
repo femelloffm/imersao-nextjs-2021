@@ -1,19 +1,24 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
+import Lottie from 'react-lottie';
+/* Animation made by harukasano and found on LottieFiles: https://lottiefiles.com/harukasano */
+import animationData from '../../src/screens/Quiz/animations/loading.json';
 
-import db from '../db.json';
-import Widget from '../src/components/Widget';
-import QuizBackground from '../src/components/QuizBackground';
-import QuizContainer from '../src/components/QuizContainer';
-import QuizLogo from '../src/components/QuizLogo';
-import Button from '../src/components/Button';
-import AlternativesForm from '../src/components/AlternativesForm';
+import db from '../../db.json';
+import Widget from '../../src/components/Widget';
+import QuizBackground from '../../src/components/QuizBackground';
+import QuizContainer from '../../src/components/QuizContainer';
+import QuizLogo from '../../src/components/QuizLogo';
+import Button from '../../src/components/Button';
+import AlternativesForm from '../../src/components/AlternativesForm';
+import BackLinkArrow from '../../src/components/BackLinkArrow';
 
 function ResultWidget({ results }) {
   return (
     <Widget>
       <Widget.Header>
-        Resultado
+        <BackLinkArrow href="/" />
+        <h1>Resultado</h1>
       </Widget.Header>
 
       <Widget.Content>
@@ -41,6 +46,18 @@ function ResultWidget({ results }) {
 }
 
 function LoadingWidget() {
+  const [animationState] = React.useState({
+    isStopped: false, isPaused: false,
+  });
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData,
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice',
+    },
+  };
+
   return (
     <Widget>
       <Widget.Header>
@@ -48,7 +65,15 @@ function LoadingWidget() {
       </Widget.Header>
 
       <Widget.Content>
-        [Desafio do Loading]
+        <div>
+          <Lottie
+            options={defaultOptions}
+            height={200}
+            width={200}
+            isStopped={animationState.isStopped}
+            isPaused={animationState.isPaused}
+          />
+        </div>
       </Widget.Content>
     </Widget>
   );
@@ -70,7 +95,7 @@ function QuestionWidget({
   return (
     <Widget>
       <Widget.Header>
-        {/* <BackLinkArrow href="/" /> */}
+        <BackLinkArrow href="/" />
         <h3>
           {`Pergunta ${questionIndex + 1} de ${totalQuestions}`}
         </h3>
